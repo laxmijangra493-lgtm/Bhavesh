@@ -1,1 +1,83 @@
-print("hello world)
+# ATM SYSTEM:-
+import sys
+import math
+# to store the information of user:-
+print("to store your information you have to fill these all requirements carefuly✅")
+x = input("enter your name :")
+if(x == int):
+    print("enter your valid name")
+C = input("enter your valid name :")
+if(C == int):
+    sys.exit()
+y = input("enter your account number :")
+if(len(y) != 12):
+    print("please enter valid account number")
+P = input("enter valid account number :")
+if(len(P) != 12):
+    sys.exit()
+z = input("enter your mobile number :")
+if(len(b) != 10):
+    print("please enter valid mobile number❗")
+p = input("enter valid account number :")
+if(len(p) != 12):
+    sys.exit()
+b = str(input("enter your 4-digt PIN :"))
+if(len(b) != 4):
+    print("❌invalid PIN please enter 4-digit PIN")
+a = input("enter valid 4-digit PIN :")
+if(len(a) != 4):
+    sys.exit()
+d = int(input(" deposite ammount to start your account :"))
+if(d == 0 , d < 100):
+    print("please deposite more than 100 ruppees to start your account in ATM ❗")
+    sys.exit()
+print(d ,"deposited")
+print("congaratulations your ATM has been activated👍" )
+# for further steps:-
+A = input("enter '1' for chack balance , '2' for deposite more ammount , '3' for withdraw ammount and 'no' for exit :")
+if(A == '1'):   #to check balance:-
+    check_acc = input("enter account number :")
+    check_pin = input("enter your PIN :")
+    if(check_acc == y and  check_pin == b):
+        print("your balance is :" , d)
+    else:
+        print("invalid details")
+
+    print("thankyou❤")
+
+if(A == '2'): # to deposit ammount:-
+
+    Z = str(input("enter your account number :"))
+    if(Z != y):
+        print("❌invalid account number")
+        sys.exit()
+    X = input("enter your 4-digit PIN :")
+    if(X != b):
+        print("❌ invalid PIN")
+        sys.exit()
+    Y = int(input("enter ammount to deposite :"))
+    sum = Y + d
+    print("your ammount successfully added to your ATM, your balance is :" , sum)
+    print("thankyou❤")
+
+if(A == '3'):   # to  withdraw ammount:-
+
+    B = str(input("ente your account number :"))
+    if(B != y):
+        print("❌invalid account number")
+        sys.exit()
+    v = input("enter your 4-digit PIN :")
+    if(v != b):
+        print("❌ invalid PIN")
+        sys.exit()
+    V = int(input("enter amount to withdraw :"))
+    differ = d - V
+    if(differ < 0):
+        print("❗their is no much ammount in your ATM")
+        sys.exit()
+    print("you withdraw successfully ammount from your ATM, your balance is :" , differ)
+    print("thankyou❤")
+
+else:
+    print("thankyou❤")
+    sys.exit()
