@@ -1,0 +1,36 @@
+# ELECTRICITY BILL:-
+# 1. to take conection:-
+import sys
+import math
+x = input("enter your name :")
+y = str(input("enter your account number :"))
+if(len(y)!= 12):
+    print("invalid account number❌")
+    sys.exit()
+z = int(input("enter PAN number :"))
+
+print("your connection has been successfuly anable to use \n" , " thankyou❤")
+
+a = input("enter '1' for meter connection ,'2'for direct connection :")
+if(a == '1'):
+    gst = 300
+    conn_type_charge  = 200
+    print("per unit charge is")
+    u = 45
+    print(u)
+    c = int(input("enter unit consumed in 'KWhr.' :"))
+    product = (c * u)
+    sum_bill= (gst + conn_type_charge + product)
+    print(sum_bill)
+    print("tankyou❤")
+if(a == '2'):
+    gstin = 400
+    connection_type_CHARGE = 250
+    print("per unit chrage is")
+    U = 50
+    print(U)
+    k  = int(input("enter unit consumed in 'KWhr.' :"))
+    pro = (k * U)
+    total_bill = (gstin + connection_type_CHARGE + pro )
+    print(total_bill)
+    print("thankyou❤")
